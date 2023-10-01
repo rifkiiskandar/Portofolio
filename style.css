@@ -1,3 +1,7 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .btn-open {
     border: 1px solid black;
     position: absolute;
@@ -25,7 +29,6 @@
     color: black;
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
     border: 1px solid black;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .menu:hover {
@@ -45,14 +48,36 @@
     grid-row: 1 / 2;
 }
 
-.internship {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-}
-
 .hobby {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+}
+
+.gambar-profil {
+    position: absolute;
+    padding: 100px;
+    border: 1px solid black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.gambar-profil:hover {
+    padding: 150px;
+    transform: scale(1.1) translate(-45%, -45%);
+    border: 1px solid black;
+    background: url("/img/Rifki.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.gambar-profil img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 footer {
@@ -60,5 +85,5 @@ footer {
     text-align: center;
     background-color: #333;
     color: #fff;
-    padding: 50px;
+    padding: 25px;
 }

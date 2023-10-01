@@ -5,10 +5,209 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: white;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            width: 90%;
+            background-color: white;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+            padding: 0 5%;
+            position: fixed;
+            z-index: 2;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li a {
+            margin: 35px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        nav ul li a:hover {
+            color: rgb(198, 22, 22);
+        }
+
+        .logo {
+            color: black;
+            font-size: 25px;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        #home {
+            width: 100%;
+            height: 95vh;
+            position: relative;
+        }
+
+        .home {
+            line-height: 0;
+            margin: 55px 0 25px;
+        }
+
+        .home p:nth-child(1) {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: black;
+            font-size: 20px;
+        }
+
+        .home p:nth-child(2) {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            color: rgb(174, 3, 3);
+            letter-spacing: none;
+            font-size: 30px;
+        }
+
+        .home p:nth-child(3) {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            color: rgb(174, 3, 3);
+            font-size: 30px;
+        }
+
+        .home p:nth-child(4) {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: black;
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        .home {
+            right: 15%;
+            top: 25%;
+            left: 13%;
+            position: absolute;
+            transform: translate(13%, 42%);
+        }
+
+        .picture {
+            width: 400px;
+            height: auto;
+            position: absolute;
+            left: 75%;
+            top: 15%;
+            transform: translateX(-70%);
+        }
+
+        #about {
+            height: 80vh;
+            background-color: rgb(24, 24, 24);
+            padding: 2% 10% 10%;
+
+        }
+
+        .about-desc {
+            margin: 50px 50px;
+        }
+
+        .about-desc p:nth-child(1) {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: white;
+            font-size: 30px;
+            line-height: 0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .about-desc p:nth-child(2) {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        .row {
+            margin: 10px;
+            padding: 20px;
+            display: flex;
+        }
+
+        .row .coloumn {
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin: 20px;
+        }
+
+        .row .coloumn img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 
 <body>
-    <p>saya sekarang lagi belajar git</p>
+    <section id="home">
+        <div class="navbar">
+            <nav>
+                <a href="menu.html" class="logo">ABOUT</a>
+                <ul>
+                    <li><a href="#home">MyProfil</a></li>
+                    <li><a href="#about">MyAddress</a></li>
+                    <li><a href="menu.html"
+                            style="color: white; background-color: black; padding: 10px; border-radius: 10px; ">Back</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="home">
+            <p>Haii,</p>
+            <p>Aku Rifki</p>
+            <p>Mahasiswa Sistem Informasi Universitas Jambi</p>
+            <br>
+            <p>Belajar intensif di Infinite Learning Indonesia</p>
+            <p>selama 4 - 5 bulan kedepan</p>
+        </div>
+        <img src="img/rifki.png" alt="rifki-picture" class="picture">
+    </section>
+    <section id="about">
+        <div class="about">
+            <div class="about-desc">
+                <p>Addres</p>
+                <p>Perumnas Aurduri Kel. Aurkenali Kec. Telanaipura Kota Jambi</p>
+            </div>
+
+            <div class="row">
+                <div class="coloumn">
+                    <h3>Photo My House</h3>
+                    <img src="/img/rumah.jpg" alt="gambar-rumah">
+                </div>
+                <div class="coloumn">
+                    <h3>Photo My House</h3>
+                    <img src="/img/rumah.jpg" alt="gambar-rumah">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        CONTACT ME
+    </footer>
 </body>
 
 </html>
